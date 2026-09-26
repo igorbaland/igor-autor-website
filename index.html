@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    >
+
+    <meta
+        name="description"
+        content="Igor Balandin – Autor. Eine persönliche digitale Autorenwelt."
+    >
+
+    <meta name="theme-color" content="#050505">
+
+    <title>Igor Balandin — AUTHOR_37</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- =========================================================
+     CURSOR
+========================================================= -->
+
+<div class="cursor" aria-hidden="true">
+    <div class="cursor-ring"></div>
+    <div class="cursor-core"></div>
+    <div class="cursor-label"></div>
+</div>
+
+<div class="cursor-click" aria-hidden="true"></div>
+
+<!-- =========================================================
+     NOISE
+========================================================= -->
+
+<div class="noise" aria-hidden="true"></div>
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header class="site-header">
+
+    <a href="#top" class="logo" aria-label="Igor Balandin Startseite">
+        <span class="logo-name">IGOR BALANDIN</span>
+        <span class="logo-code">AUTHOR_37</span>
+    </a>
+
+    <div class="header-right">
+
+        <div class="system-status">
+            <span class="status-dot"></span>
+            <span class="status-text">SYSTEM ONLINE</span>
+        </div>
+
+        <div class="language-switcher">
+            <button class="language-btn active" data-language="de">DE</button>
+            <span>/</span>
+            <button class="language-btn" data-language="en">EN</button>
+        </div>
+
+        <button
+            class="menu-button"
+            id="menuButton"
+            aria-label="Menü öffnen"
+            aria-expanded="false"
+        >
+            <span></span>
+            <span></span>
+        </button>
+
+    </div>
+
+</header>
+
+<!-- =========================================================
+     FULLSCREEN MENU
+========================================================= -->
+
+<div class="menu-overlay" id="menuOverlay">
+
+    <div class="menu-top">
+        <span>INDEX / NAVIGATION</span>
+        <span>AUTHOR_37</span>
+    </div>
+
+    <nav class="main-menu">
+
+        <a href="#about" class="menu-link">
+            <span class="menu-number">01</span>
+            <span data-de="ÜBER MICH" data-en="ABOUT ME">ÜBER MICH</span>
+        </a>
+
+        <a href="#book" class="menu-link">
+            <span class="menu-number">02</span>
+            <span data-de="MEIN BUCH" data-en="MY BOOK">MEIN BUCH</span>
+        </a>
+
+        <a href="#process" class="menu-link">
+            <span class="menu-number">03</span>
+            <span data-de="DER PROZESS" data-en="THE PROCESS">DER PROZESS</span>
+        </a>
+
+        <a href="#contact" class="menu-link">
+            <span class="menu-number">04</span>
+            <span data-de="KONTAKT" data-en="CONTACT">KONTAKT</span>
+        </a>
+
+    </nav>
+
+    <div class="menu-bottom">
+        <span>IGOR BALANDIN</span>
+        <span>© <span class="current-year"></span></span>
+    </div>
+
+</div>
+
+<!-- =========================================================
+     MAIN
+========================================================= -->
+
+<main id="top">
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+
+    <section class="hero section">
+
+        <div class="hero-grid"></div>
+
+        <div class="hero-meta">
+            <span>01 / AUTHOR</span>
+            <span>37 YEARS</span>
+            <span>GERMANY</span>
+        </div>
+
+        <div class="hero-content">
+
+            <p class="eyebrow">
+                <span class="red-line"></span>
+                IGOR BALANDIN
+            </p>
+
+            <h1 class="hero-title">
+                <span>ICH SCHREIBE</span>
+                <span class="outline-text">MEINE</span>
+                <span>GESCHICHTE.</span>
+            </h1>
+
+            <div class="hero-bottom">
+
+                <p
+                    class="hero-description"
+                    data-de="Worte sind nicht nur Worte. Sie sind Spuren."
+                    data-en="Words are not just words. They are traces."
+                >
+                    Worte sind nicht nur Worte. Sie sind Spuren.
+                </p>
+
+                <a href="#about" class="scroll-indicator">
+                    <span class="scroll-arrow">↓</span>
+                    <span data-de="ENTDECKEN" data-en="DISCOVER">
+                        ENTDECKEN
+                    </span>
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-side-text">
+            <span>AUTHOR</span>
+            <span>37</span>
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         MANIFEST
+    ====================================================== -->
+
+    <section class="manifest section">
+
+        <div class="container">
+
+            <div class="section-index">
+                <span>001</span>
+                <span>MANIFEST</span>
+            </div>
+
+            <div class="manifest-text">
+
+                <p
+                    class="huge-text"
+                    data-de="ICH GLAUBE AN GESCHICHTEN, DIE BLEIBEN."
+                    data-en="I BELIEVE IN STORIES THAT REMAIN."
+                >
+                    ICH GLAUBE AN GESCHICHTEN,
+                    DIE BLEIBEN.
+                </p>
+
+            </div>
+
+            <div class="manifest-footer">
+
+                <span>WORDS / MEMORY / LIFE</span>
+
+                <span class="manifest-mark">
+                    AUTHOR_37
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         ABOUT
+    ====================================================== -->
+
+    <section class="about section" id="about">
+
+        <div class="container">
+
+            <div class="section-index">
+                <span>002</span>
+                <span data-de="ÜBER MICH" data-en="ABOUT ME">
+                    ÜBER MICH
+                </span>
+            </div>
+
+            <div class="about-grid">
+
+                <!-- PORTRAIT -->
+
+                <div class="portrait-column">
+
+                    <div
+                        class="photo-container"
+                        data-cursor="FARBE"
+                    >
+
+                        <div class="photo-label photo-label-top">
+                            PORTRAIT / 001
+                        </div>
+
+                        <div class="photo-frame"></div>
+
+                        <div class="photo-scan"></div>
+
+                        <img
+                            src="jpeg/autorImg.jpeg"
+                            alt="Portrait von Igor Balandin"
+                            class="author-photo"
+                        >
+
+                        <div class="photo-data">
+                            <span>ID: AUTHOR_37</span>
+                            <span>STATUS: WRITING</span>
+                        </div>
+
+                        <div class="photo-label photo-label-bottom">
+                            <span>IGOR BALANDIN</span>
+                            <span>AUTHOR_37</span>
+                        </div>
+
+                        <button
+                            class="photo-trigger"
+                            type="button"
+                            aria-label="Portrait Farbe ein- oder ausschalten"
+                        >
+                            CLICK / COLOR
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TEXT -->
+
+                <div class="about-content">
+
+                    <p class="about-intro">
+                        <span class="red-symbol">+</span>
+                        <span
+                            data-de="AUTOR / ENTWICKLER / MENSCH"
+                            data-en="AUTHOR / DEVELOPER / HUMAN"
+                        >
+                            AUTOR / ENTWICKLER / MENSCH
+                        </span>
+                    </p>
+
+                    <h2
+                        data-de="ZWISCHEN CODE UND WORTEN."
+                        data-en="BETWEEN CODE AND WORDS."
+                    >
+                        ZWISCHEN CODE UND WORTEN.
+                    </h2>
+
+                    <div class="about-copy">
+
+                        <p
+                            data-de="Ich bin Igor Balandin. Entwickler, Beobachter und Autor. Ich verbringe viel Zeit damit, Systeme zu bauen – und genauso viel damit, Geschichten zu verstehen."
+                            data-en="I am Igor Balandin. Developer, observer and author. I spend much of my time building systems – and just as much time understanding stories."
+                        >
+                            Ich bin Igor Balandin. Entwickler, Beobachter
+                            und Autor. Ich verbringe viel Zeit damit,
+                            Systeme zu bauen – und genauso viel damit,
+                            Geschichten zu verstehen.
+                        </p>
+
+                        <p
+                            data-de="Diese Seite ist kein klassisches Portfolio. Sie ist ein digitaler Raum für meine Gedanken, mein Buch und die Geschichten, die daraus entstehen."
+                            data-en="This website is not a classic portfolio. It is a digital space for my thoughts, my book and the stories that emerge from them."
+                        >
+                            Diese Seite ist kein klassisches Portfolio.
+                            Sie ist ein digitaler Raum für meine Gedanken,
+                            mein Buch und die Geschichten, die daraus entstehen.
+                        </p>
+
+                    </div>
+
+                    <div class="about-facts">
+
+                        <div class="fact">
+                            <span>01</span>
+                            <strong>37</strong>
+                            <small>YEARS</small>
+                        </div>
+
+                        <div class="fact">
+                            <span>02</span>
+                            <strong>∞</strong>
+                            <small>IDEAS</small>
+                        </div>
+
+                        <div class="fact">
+                            <span>03</span>
+                            <strong>01</strong>
+                            <small>BOOK</small>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         BOOK
+    ====================================================== -->
+
+    <section class="book-section section" id="book">
+
+        <div class="container">
+
+            <div class="section-index light-index">
+                <span>003</span>
+                <span data-de="MEIN BUCH" data-en="MY BOOK">
+                    MEIN BUCH
+                </span>
+            </div>
+
+            <div class="book-grid">
+
+                <div class="book-copy">
+
+                    <p class="eyebrow">
+                        <span class="red-line"></span>
+                        PROJECT / 001
+                    </p>
+
+                    <h2
+                        data-de="EINE GESCHICHTE IST NIE NUR EINE GESCHICHTE."
+                        data-en="A STORY IS NEVER JUST A STORY."
+                    >
+                        EINE GESCHICHTE IST NIE
+                        NUR EINE GESCHICHTE.
+                    </h2>
+
+                    <p
+                        class="book-description"
+                        data-de="Mein erstes Buch entsteht gerade. Seite für Seite. Gedanke für Gedanke."
+                        data-en="My first book is currently taking shape. Page by page. Thought by thought."
+                    >
+                        Mein erstes Buch entsteht gerade.
+                        Seite für Seite.
+                        Gedanke für Gedanke.
+                    </p>
+
+                    <div class="progress-area">
+
+                        <div class="progress-header">
+                            <span>WRITING PROGRESS</span>
+                            <span>67%</span>
+                        </div>
+
+                        <div class="progress-track">
+                            <div class="progress-bar"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- BOOK VISUAL -->
+
+                <div class="book-visual">
+
+                    <div class="book-shadow"></div>
+
+                    <div class="book-object">
+
+                        <div class="book-cover">
+
+                            <div class="book-cover-top">
+                                AUTHOR_37
+                            </div>
+
+                            <div class="book-title">
+                                MEINE
+                                <br>
+                                GESCHICHTE.
+                            </div>
+
+                            <div class="book-author">
+                                IGOR BALANDIN
+                            </div>
+
+                            <div class="book-cover-bottom">
+                                WORK IN PROGRESS
+                            </div>
+
+                        </div>
+
+                        <div class="book-pages"></div>
+
+                    </div>
+
+                    <div class="book-coordinate">
+                        53°N / 09°E
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         PROCESS
+    ====================================================== -->
+
+    <section class="process section" id="process">
+
+        <div class="container">
+
+            <div class="section-index">
+                <span>004</span>
+                <span data-de="DER PROZESS" data-en="THE PROCESS">
+                    DER PROZESS
+                </span>
+            </div>
+
+            <div class="process-header">
+
+                <h2>
+                    <span
+                        data-de="VON DER IDEE"
+                        data-en="FROM IDEA"
+                    >
+                        VON DER IDEE
+                    </span>
+
+                    <span
+                        class="outline-text"
+                        data-de="ZUR GESCHICHTE."
+                        data-en="TO STORY."
+                    >
+                        ZUR GESCHICHTE.
+                    </span>
+                </h2>
+
+            </div>
+
+
+            <div class="process-list">
+
+                <div class="process-item">
+
+                    <span class="process-number">01</span>
+
+                    <div class="process-main">
+                        <h3
+                            data-de="BEOBACHTEN"
+                            data-en="OBSERVE"
+                        >
+                            BEOBACHTEN
+                        </h3>
+
+                        <p
+                            data-de="Alles beginnt mit einem Detail."
+                            data-en="Everything starts with a detail."
+                        >
+                            Alles beginnt mit einem Detail.
+                        </p>
+                    </div>
+
+                    <span class="process-symbol">+</span>
+
+                </div>
+
+
+                <div class="process-item">
+
+                    <span class="process-number">02</span>
+
+                    <div class="process-main">
+                        <h3
+                            data-de="DENKEN"
+                            data-en="THINK"
+                        >
+                            DENKEN
+                        </h3>
+
+                        <p
+                            data-de="Aus Beobachtung entsteht Bedeutung."
+                            data-en="Meaning grows from observation."
+                        >
+                            Aus Beobachtung entsteht Bedeutung.
+                        </p>
+                    </div>
+
+                    <span class="process-symbol">+</span>
+
+                </div>
+
+
+                <div class="process-item">
+
+                    <span class="process-number">03</span>
+
+                    <div class="process-main">
+                        <h3
+                            data-de="SCHREIBEN"
+                            data-en="WRITE"
+                        >
+                            SCHREIBEN
+                        </h3>
+
+                        <p
+                            data-de="Gedanken bekommen eine Stimme."
+                            data-en="Thoughts find a voice."
+                        >
+                            Gedanken bekommen eine Stimme.
+                        </p>
+                    </div>
+
+                    <span class="process-symbol">+</span>
+
+                </div>
+
+
+                <div class="process-item">
+
+                    <span class="process-number">04</span>
+
+                    <div class="process-main">
+                        <h3
+                            data-de="TEILEN"
+                            data-en="SHARE"
+                        >
+                            TEILEN
+                        </h3>
+
+                        <p
+                            data-de="Eine Geschichte gehört irgendwann nicht mehr nur ihrem Autor."
+                            data-en="At some point, a story no longer belongs only to its author."
+                        >
+                            Eine Geschichte gehört irgendwann
+                            nicht mehr nur ihrem Autor.
+                        </p>
+                    </div>
+
+                    <span class="process-symbol">+</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         TERMINAL
+    ====================================================== -->
+
+    <section class="terminal-section section">
+
+        <div class="container">
+
+            <div class="terminal-window">
+
+                <div class="terminal-top">
+
+                    <div class="terminal-dots">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <span>igor@author:~</span>
+
+                    <span>ONLINE</span>
+
+                </div>
+
+                <div class="terminal-body">
+
+                    <p>
+                        <span class="terminal-green">igor@author</span>:~$
+                        <span>./write_story.sh</span>
+                    </p>
+
+                    <p class="terminal-output">
+                        <span class="terminal-green">[OK]</span>
+                        <span id="terminalText">
+                            initializing...
+                        </span>
+                    </p>
+
+                    <p>
+                        <span class="terminal-green">igor@author</span>:~$
+                        <span class="terminal-cursor">█</span>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         STATEMENT
+    ====================================================== -->
+
+    <section class="statement section">
+
+        <div class="statement-number">
+            37
+        </div>
+
+        <div class="statement-content">
+
+            <p
+                class="statement-small"
+                data-de="EINE ZAHL. EIN ALTER. EINE GESCHICHTE."
+                data-en="A NUMBER. AN AGE. A STORY."
+            >
+                EINE ZAHL. EIN ALTER. EINE GESCHICHTE.
+            </p>
+
+            <h2>
+                <span>NICHT</span>
+                <span class="outline-text">PERFEKT.</span>
+                <span>ECHT.</span>
+            </h2>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         SOCIAL
+    ====================================================== -->
+
+    <section class="social section">
+
+        <div class="container">
+
+            <div class="section-index">
+                <span>005</span>
+                <span>SOCIAL</span>
+            </div>
+
+            <div class="social-intro">
+                FOLLOW THE STORY.
+            </div>
+
+            <div class="social-links">
+
+                <a
+                    href="#"
+                    class="social-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-cursor="INSTAGRAM"
+                >
+                    <span class="social-number">01</span>
+                    <span>INSTAGRAM</span>
+                    <span class="social-arrow">↗</span>
+                </a>
+
+                <a
+                    href="#"
+                    class="social-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-cursor="FACEBOOK"
+                >
+                    <span class="social-number">02</span>
+                    <span>FACEBOOK</span>
+                    <span class="social-arrow">↗</span>
+                </a>
+
+                <a
+                    href="#"
+                    class="social-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-cursor="GOODREADS"
+                >
+                    <span class="social-number">03</span>
+                    <span>GOODREADS</span>
+                    <span class="social-arrow">↗</span>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CONTACT
+    ====================================================== -->
+
+    <section class="contact section" id="contact">
+
+        <div class="container">
+
+            <div class="contact-top">
+                <span>006 / CONTACT</span>
+                <span>LET'S TALK</span>
+            </div>
+
+            <div class="contact-content">
+
+                <p
+                    data-de="EINE IDEE?"
+                    data-en="AN IDEA?"
+                >
+                    EINE IDEE?
+                </p>
+
+                <h2>
+                    SAG
+                    <br>
+                    <span>MOIN.</span>
+                </h2>
+
+                <a
+                    href="mailto:deine-mail@example.com"
+                    class="contact-email"
+                >
+                    deine-mail@example.com
+                </a>
+
+            </div>
+
+            <div class="contact-bottom">
+
+                <span>IGOR BALANDIN</span>
+
+                <span>
+                    AUTHOR_37
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         FINAL
+    ====================================================== -->
+
+    <section class="final section">
+
+        <div class="final-grid"></div>
+
+        <div class="final-content">
+
+            <p>END / OR BEGINNING?</p>
+
+            <h2>
+                <span>THE</span>
+                <span class="outline-text">STORY</span>
+                <span>CONTINUES.</span>
+            </h2>
+
+            <a href="#top" class="back-top">
+                ↑
+                <span data-de="NACH OBEN" data-en="BACK TO TOP">
+                    NACH OBEN
+                </span>
+            </a>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="site-footer">
+
+    <div class="footer-main">
+
+        <div>
+            <strong>IGOR BALANDIN</strong>
+            <span>AUTHOR_37</span>
+        </div>
+
+        <div>
+            <span>© <span class="current-year"></span></span>
+        </div>
+
+    </div>
+
+    <div class="footer-links">
+
+        <button
+            class="legal-button"
+            data-legal="impressum"
+        >
+            IMPRESSUM
+        </button>
+
+        <button
+            class="legal-button"
+            data-legal="datenschutz"
+        >
+            DATENSCHUTZ
+        </button>
+
+    </div>
+
+</footer>
+
+
+<!-- =========================================================
+     LEGAL MODAL
+========================================================= -->
+
+<div
+    class="legal-modal"
+    id="legalModal"
+    aria-hidden="true"
+>
+
+    <div class="legal-modal-inner">
+
+        <button
+            class="legal-close"
+            id="legalClose"
+            aria-label="Fenster schließen"
+        >
+            ×
+        </button>
+
+        <div class="legal-label">
+            LEGAL / INFO
+        </div>
+
+        <div id="legalContent"></div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     PRIVACY NOTICE
+========================================================= -->
+
+<div
+    class="privacy-notice"
+    id="privacyNotice"
+>
+
+    <div class="privacy-icon">
+        +
+    </div>
+
+    <div class="privacy-content">
+
+        <strong>
+            NOTWENDIGE DATEN
+        </strong>
+
+        <p
+            data-de="Diese Website verwendet keine Tracking-Cookies. Technisch notwendige Verbindungsdaten können beim Aufruf einer Website durch den Server verarbeitet werden."
+            data-en="This website does not use tracking cookies. Technically necessary connection data may be processed by the server when visiting a website."
+        >
+            Diese Website verwendet keine Tracking-Cookies.
+            Technisch notwendige Verbindungsdaten können beim
+            Aufruf einer Website durch den Server verarbeitet werden.
+        </p>
+
+    </div>
+
+    <button
+        id="privacyAccept"
+        type="button"
+    >
+        OK
+    </button>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
